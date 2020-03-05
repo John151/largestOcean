@@ -21,7 +21,8 @@ namespace largestOcean
         {
             string answer = txtAnswer.Text;
             answer = answer.ToLower();
-            if (answer == "pacific")
+
+            if (answer.Contains("pacific"))
             {
                 MessageBox.Show("Correct!", "Result");
             }
