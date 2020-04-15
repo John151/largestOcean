@@ -22,7 +22,26 @@ namespace largestOcean
             string answer = txtAnswer.Text;
             answer = answer.ToLower();
 
-            if (answer.Contains("pacific"))
+            //i thought contains would work better, accepts "pacific ocean" as answer, rejects
+            //other oceans in case of cheating
+
+            if (answer.Contains("southern"))
+            {
+                MessageBox.Show("Incorrect, the only answer is the \"Pacific\" Ocean", "Result"); ;
+            }
+            else if (answer.Contains("atlantic"))
+            {
+                MessageBox.Show("Incorrect, the only answer is the \"Pacific\" Ocean", "Result");
+            }
+            else if (answer.Contains("indian"))
+            {
+                MessageBox.Show("Incorrect, the only answer is the \"Pacific\" Ocean", "Result");
+            }
+            else if (answer.Contains("arctic"))
+            {
+                MessageBox.Show("Incorrect, the only answer is the \"Pacific\" Ocean", "Result");
+            }
+            else if (answer.Contains("pacific"))
             {
                 MessageBox.Show("Correct!", "Result");
             }
